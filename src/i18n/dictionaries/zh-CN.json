@@ -1,0 +1,95 @@
+{
+  "locale": "zh-CN",
+  "site": {
+    "title": "易经数字博物馆",
+    "subtitle": "I Ching Digital Museum",
+    "tagline": "三千年前的智慧 · 今天依然在回答人生问题",
+    "footer": "数字博物 · 易经美学可视化研究",
+    "copyright": "宋韵美学 · 东方哲思"
+  },
+  "nav": {
+    "home": "首页",
+    "daily": "今日一卦",
+    "whatIs": "易经是什么",
+    "bagua": "八卦",
+    "learning": "学习",
+    "wisdom": "智慧",
+    "aiTutor": "AI导师",
+    "explore": "探索六十四卦"
+  },
+  "hero": {
+    "cta": "开始探索 ↓"
+  },
+  "daily": {
+    "title": "今日一卦",
+    "wisdom": "智慧箴言",
+    "thinkDirection": "思考方向",
+    "actionAdvice": "行动建议",
+    "viewFull": "查看完整解读 →"
+  },
+  "whatIs": {
+    "title": "易经是什么",
+    "subtitle": "三千年东方智慧的源流"
+  },
+  "bagua": {
+    "title": "八卦导航",
+    "subtitle": "天地定位 · 山泽通气 · 雷风相薄 · 水火不相射"
+  },
+  "learning": {
+    "title": "学习路径",
+    "subtitle": "从入门到精通的成长之路",
+    "levels": {
+      "newbie": "易学新人",
+      "yinyang": "阴阳学徒",
+      "bagua": "八卦学徒",
+      "scholar": "六十四卦学者",
+      "researcher": "象数研究员",
+      "master": "易学导师"
+    },
+    "current": "当前",
+    "explored": "已探索",
+    "totalHexagrams": "卦",
+    "startExploring": "开始探索六十四卦，踏上学习之旅"
+  },
+  "wisdom": {
+    "title": "人生智慧专题",
+    "subtitle": "易经不是预测工具，而是一面认识自己的镜子"
+  },
+  "aiTutor": {
+    "title": "AI 国学导师",
+    "subtitle": "以易学智慧为镜，观照你的人生之问",
+    "placeholder": "输入你关心的问题...",
+    "startChat": "开始对话",
+    "disclaimer": "AI 不会预测未来或替您决策，而是提供哲学思考的参考框架"
+  },
+  "prologue": {
+    "open": "开启大易通识（历史渊源 · 起卦方法 · 历代大师 · 现代启示）",
+    "close": "收起大易通识"
+  },
+  "hexagram": {
+    "yaoHint": "点击任意爻线 · 体验变卦之妙",
+    "yaoFlipped": "已变",
+    "yaoFlip": "点击翻转",
+    "yaoNetwork": "六爻变卦网络",
+    "relationGraph": "卦象演变图谱",
+    "matrix": "六十四卦全景数字矩阵",
+    "matrixSub": "乾坤德配 · 咸恒体用 · 周易通行卦序全景呈现",
+    "schools": {
+      "title": "诸家解卦",
+      "shaoYong": "邵雍",
+      "fuPeirong": "傅佩荣",
+      "traditional": "传统",
+      "zhangMingren": "张铭仁"
+    },
+    "disclaimer": "以上为历代易学家对卦象的解读，反映不同时代的文化视角，仅供哲学与文化研究参考。",
+    "modern": {
+      "title": "现代生活之思",
+      "preamble": "以下从哲学视角解读此卦对现代生活的启示，供思考而非预测。",
+      "career": "/ 事业之思 /",
+      "wealth": "/ 财富之思 /",
+      "love": "/ 情感之思 /",
+      "health": "/ 身心之思 /",
+      "interpersonal": "/ 人际之思 /"
+    }
+  }
+}

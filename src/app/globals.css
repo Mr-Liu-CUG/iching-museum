@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-paper: #f5f1e8;
+  --color-gold-primary: #b08d57;
+  --color-gold-light: #c9a87c;
+  --color-gold-pale: #e8dcc8;
+  --color-brown-dark: #8b5a2b;
+  --color-brown-mid: #6b3a1f;
+  --color-red-palace: #8a2b2b;
+  --color-red-light: #a04040;
+  --color-ink-dark: #2c2c2c;
+  --color-ink-mid: #4a4a4a;
+  --color-ink-muted: #6a655c;
+  --color-ink-light: #9a948c;
+  --color-card-bg: rgba(255, 255, 255, 0.82);
+  --color-card-bg-solid: #fdfcf9;
+  --color-border-gold: rgba(176, 141, 87, 0.25);
+  --color-border-pale: #e2dacb;
+  --font-song: "Noto Serif SC", "Source Han Serif SC", "SimSun", "STSong", "KaiTi", serif;
+  --font-sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-sm: 0 2px 12px rgba(139, 90, 43, 0.06);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.1);
+  --shadow-gold: 0 0 24px rgba(176, 141, 87, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-paper);
+  color: var(--color-ink-dark);
+  font-family: var(--font-song);
+  line-height: 1.7;
+}
+
+::selection {
+  background-color: rgba(176, 141, 87, 0.25);
+  color: var(--color-brown-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

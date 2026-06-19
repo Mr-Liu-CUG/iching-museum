@@ -1,0 +1,95 @@
+{
+  "locale": "ja",
+  "site": {
+    "title": "易経デジタル博物館",
+    "subtitle": "I Ching Digital Museum",
+    "tagline": "三千年前の知恵 · 今日も人生の問いに答えている",
+    "footer": "デジタル博物 · 易経美学可視化研究",
+    "copyright": "宋韻美学 · 東方哲思"
+  },
+  "nav": {
+    "home": "トップ",
+    "daily": "今日の一卦",
+    "whatIs": "易経とは",
+    "bagua": "八卦",
+    "learning": "学習",
+    "wisdom": "知恵",
+    "aiTutor": "AI导师",
+    "explore": "六十四卦を探索"
+  },
+  "hero": {
+    "cta": "探索を始める ↓"
+  },
+  "daily": {
+    "title": "今日の一卦",
+    "wisdom": "知恵の言葉",
+    "thinkDirection": "思考の方向",
+    "actionAdvice": "行動の助言",
+    "viewFull": "詳細を見る →"
+  },
+  "whatIs": {
+    "title": "易経とは",
+    "subtitle": "三千年の東方知恵の源流"
+  },
+  "bagua": {
+    "title": "八卦ナビゲーション",
+    "subtitle": "天地定位 · 山澤通気 · 雷風相薄 · 水火不相射"
+  },
+  "learning": {
+    "title": "学習パス",
+    "subtitle": "入門から精通までの成長の道",
+    "levels": {
+      "newbie": "易学初心者",
+      "yinyang": "陰陽学徒",
+      "bagua": "八卦学徒",
+      "scholar": "六十四卦学者",
+      "researcher": "象数研究員",
+      "master": "易学導師"
+    },
+    "current": "現在",
+    "explored": "探索済",
+    "totalHexagrams": "卦",
+    "startExploring": "六十四卦の探索を始め、学習の旅に出よう"
+  },
+  "wisdom": {
+    "title": "人生の知恵特集",
+    "subtitle": "易経は予言ツールではなく、自分を知るための鏡"
+  },
+  "aiTutor": {
+    "title": "AI 国学導師",
+    "subtitle": "易学の知恵を鏡として、あなたの人生の問いを照らす",
+    "placeholder": "気になることを入力してください...",
+    "startChat": "対話開始",
+    "disclaimer": "AIは未来を予言したり意思決定の代行はしません。哲学的な思考の参考枠組みを提供します"
+  },
+  "prologue": {
+    "open": "大易通識を開く（歴史的起源 · 起卦法 · 歴代大師 · 現代的示唆）",
+    "close": "大易通識を閉じる"
+  },
+  "hexagram": {
+    "yaoHint": "任意の爻線をクリック · 変卦の妙を体験",
+    "yaoFlipped": "変化済",
+    "yaoFlip": "クリックして反転",
+    "yaoNetwork": "六爻変卦ネットワーク",
+    "relationGraph": "卦象進化マップ",
+    "matrix": "六十四卦全景デジタルマトリックス",
+    "matrixSub": "乾坤徳配 · 咸恒体用 · 周易通行卦序全景",
+    "schools": {
+      "title": "諸家解卦",
+      "shaoYong": "邵雍",
+      "fuPeirong": "傅佩栄",
+      "traditional": "伝統",
+      "zhangMingren": "張銘仁"
+    },
+    "disclaimer": "以上は歴代の易学者による卦象の解読であり、異なる時代の文化的視点を反映したものです。哲学と文化研究の参考としてご利用ください。",
+    "modern": {
+      "title": "現代生活の省察",
+      "preamble": "以下は哲学的視点からこの卦の現代生活への示唆を読み解きます。予言ではなく思考のために。",
+      "career": "/ キャリアの省察 /",
+      "wealth": "/ 富の省察 /",
+      "love": "/ 愛の省察 /",
+      "health": "/ 身心の省察 /",
+      "interpersonal": "/ 人間関係の省察 /"
+    }
+  }
+}
