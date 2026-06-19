@@ -17,7 +17,7 @@ export default function Header() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-0 left-0 z-50 p-4 flex items-center gap-3"
+      className="fixed top-0 inset-x-0 z-50 p-4 flex items-center justify-between"
     >
       {/* Logo mark */}
       <div
@@ -46,7 +46,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -4, scale: 0.96 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute top-full left-0 mt-1 rounded-md border border-border-gold bg-card-bg-solid shadow-lg overflow-hidden"
+              className="absolute top-full right-0 mt-1 rounded-md border border-border-gold bg-card-bg-solid shadow-lg overflow-hidden"
             >
               {LOCALES.map((loc) => (
                 <button

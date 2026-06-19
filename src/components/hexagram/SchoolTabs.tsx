@@ -11,6 +11,41 @@ const SCHOOLS = [
   { key: "zhangMingren", label: "張銘仁" },
 ] as const;
 
+const TRADITIONAL_LABELS: Record<string, string> = {
+  daxiang: "大象",
+  yunshi: "运势",
+  shiye: "事业",
+  jingshang: "经商",
+  qiuming: "求名",
+  hunlian: "婚恋",
+  juece: "决策",
+};
+
+const ZHANGMINGREN_LABELS: Record<string, string> = {
+  explanation: "卦解",
+  characteristics: "特性",
+  yunshi: "运势",
+  jiayun: "家运",
+  jibing: "疾病",
+  taiyun: "胎运",
+  zinv: "子女",
+  zhouzhuan: "周转",
+  maimai: "买卖",
+  dengren: "等人",
+  xunren: "寻人",
+  shiwu: "失物",
+  waichu: "外出",
+  kaoshi: "考试",
+  susong: "诉讼",
+  qiushi: "求事",
+  gaihang: "改行",
+  kaiye: "开业",
+};
+
+function stripMarkdown(s: string): string {
+  return s.replace(/\*\*/g, "").replace(/\*/g, "");
+}
+
 interface Props {
   hexagram: Hexagram;
   index?: number;
@@ -51,9 +86,9 @@ function SchoolContent({ hexagram, school }: { hexagram: Hexagram; school: strin
       return (
         <div className="text-sm text-ink-muted leading-relaxed">
           <p className="font-medium text-ink-dark mb-1">
-            {hexagram.shaoYong?.assessment || ""}
+            {stripMarkdown(hexagram.shaoYong?.assessment || "")}
           </p>
-          <p>{hexagram.shaoYong?.text || "暂无数据"}</p>
+          <p className="whitespace-pre-line">{stripMarkdown(hexagram.shaoYong?.text || "暂无数据")}</p>
         </div>
       );
     case "fuPeirong":
@@ -70,7 +105,7 @@ function SchoolContent({ hexagram, school }: { hexagram: Hexagram; school: strin
         <div className="grid grid-cols-2 gap-3 text-sm">
           {Object.entries(hexagram.traditional || {}).map(([k, v]) => (
             <div key={k}>
-              <span className="font-sans text-xs text-ink-muted capitalize">{k}</span>
+              <span className="font-sans text-xs text-ink-muted">{TRADITIONAL_LABELS[k] || k}</span>
               <p className="text-ink-dark">{v as string || "—"}</p>
             </div>
           ))}
@@ -81,7 +116,7 @@ function SchoolContent({ hexagram, school }: { hexagram: Hexagram; school: strin
         <div className="grid grid-cols-2 gap-3 text-sm">
           {Object.entries(hexagram.zhangMingren || {}).slice(0, 12).map(([k, v]) => (
             <div key={k}>
-              <span className="font-sans text-xs text-ink-muted capitalize">{k}</span>
+              <span className="font-sans text-xs text-ink-muted">{ZHANGMINGREN_LABELS[k] || k}</span>
               <p className="text-ink-dark">{v as string || "—"}</p>
             </div>
           ))}

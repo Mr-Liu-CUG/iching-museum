@@ -149,7 +149,7 @@ export default function AITutorEntry() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-      className="py-16 px-4"
+      className="py-16 px-4 scroll-mt-32"
     >
       <div className="max-w-lg mx-auto">
         {/* Header */}

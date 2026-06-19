@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { useAppStore } from "@/stores/app-store";
+import { useHexagramLocalizer } from "@/i18n/content-context";
 import { getDailyHexagramId, formatDateCN } from "@/lib/daily-utils";
 import hexagramsData from "@/data/hexagrams-data.json";
 import type { Hexagram } from "@/lib/types";
@@ -14,9 +15,12 @@ export default function DailyHexagram() {
   useEffect(() => setMounted(true), []);
 
   const setHexagram = useAppStore((s) => s.setHexagram);
+  const { localize } = useHexagramLocalizer();
 
   const id = mounted ? getDailyHexagramId() : 0;
-  const hexagram = data[id];
+  const rawHexagram = data[id];
+  const hexagram = useMemo(() => rawHexagram ? localize(rawHexagram) : undefined, [rawHexagram, localize]);
+
   if (!hexagram) return null;
 
   const wisdom = hexagram.guaciExplain?.split("。")[0] + "。" || hexagram.mnemonic || "";
@@ -28,7 +32,7 @@ export default function DailyHexagram() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-      className="py-16 px-4 text-center"
+      className="py-16 px-4 text-center scroll-mt-32"
     >
       <p className="font-sans text-[10px] tracking-[3px] text-ink-muted mb-2">
         {mounted ? formatDateCN() : ""}

@@ -1,4 +1,5 @@
 import HeroSection from "./HeroSection";
+import ScrollNav from "@/components/layout/ScrollNav";
 import DailyHexagram from "./DailyHexagram";
 import WhatIsIChing from "./WhatIsIChing";
 import BaguaNavSection from "./BaguaNavSection";
@@ -10,6 +11,7 @@ export default function HomeContent() {
   return (
     <>
       <HeroSection />
+      <ScrollNav />
       <DailyHexagram />
       <WhatIsIChing />
       <BaguaNavSection />

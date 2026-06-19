@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useAppStore } from "@/stores/app-store";
+import { useHexagramLocalizer } from "@/i18n/content-context";
 import { searchHexagrams } from "@/lib/utils";
 import type { Hexagram } from "@/lib/types";
 
@@ -14,6 +15,7 @@ export default function SearchBar() {
   const inputRef = useRef<HTMLInputElement>(null);
   const setHexagram = useAppStore((s) => s.setHexagram);
   const getData = useAppStore((s) => s.getData);
+  const { localizeText } = useHexagramLocalizer();
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -85,7 +87,7 @@ export default function SearchBar() {
             >
               <span className="text-xl select-none">{r.symbol}</span>
               <div>
-                <span className="font-song text-sm text-ink-dark">{r.name}</span>
+                <span className="font-song text-sm text-ink-dark">{localizeText(r.name)}</span>
                 <span className="font-sans text-xs text-ink-muted ml-2">{r.pinyin}</span>
               </div>
             </button>

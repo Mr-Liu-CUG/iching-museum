@@ -22,8 +22,13 @@
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": "Edit",
-        "command": "node -e \"const fs=require('fs');const p=process.env.CLAUDE_TOOL_INPUT_FILE_PATH;if(p&&p.endsWith('.js')){try{require('child_process').execSync('node --check '+p,{stdio:'pipe'});console.log('JS syntax OK');}catch(e){console.log('JS SYNTAX ERROR:',e.stderr.toString())}}\" 2>/dev/null; true"
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"const fs=require('fs');const p=process.env.CLAUDE_TOOL_INPUT_FILE_PATH;if(p&&p.endsWith('.js')){try{require('child_process').execSync('node --check '+p,{stdio:'pipe'});console.log('JS syntax OK');}catch(e){console.log('JS SYNTAX ERROR:',e.stderr.toString())}}\" 2>/dev/null; true"
+          }
+        ]
       }
     ]
   },

@@ -1,6 +1,8 @@
 "use client";
 
+import { useMemo } from "react";
 import { useAppStore } from "@/stores/app-store";
+import { useHexagramLocalizer } from "@/i18n/content-context";
 import { MATRIX_ORDER } from "@/lib/constants";
 import type { Hexagram } from "@/lib/types";
 
@@ -8,16 +10,17 @@ export default function HexagramMatrix() {
   const currentBinary = useAppStore((s) => s.currentBinary);
   const setHexagram = useAppStore((s) => s.setHexagram);
   const getData = useAppStore((s) => s.getData);
+  const { localize } = useHexagramLocalizer();
 
   const data = getData() as Hexagram[];
-  const all = data.map((h) => h.binary);
+  const localizedData = useMemo(() => data.map((h) => localize(h)), [data, localize]);
 
   return (
     <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-1.5 md:gap-2">
       {MATRIX_ORDER.flatMap((upper) =>
         MATRIX_ORDER.map((lower) => {
           const binary = upper + lower;
-          const hex = data.find((h) => h.binary === binary);
+          const hex = localizedData.find((h) => h.binary === binary);
           if (!hex) return null;
           const isActive = binary === currentBinary;
 

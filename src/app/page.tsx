@@ -2,7 +2,6 @@
 
 import InkBackground from "@/components/layout/InkBackground";
 import Header from "@/components/layout/Header";
-import ScrollNav from "@/components/layout/ScrollNav";
 import Footer from "@/components/layout/Footer";
 import HomeContent from "@/components/home/HomeContent";
 import PrologueSection from "@/components/prologue/PrologueSection";
@@ -18,7 +17,6 @@ export default function HomePage() {
     <>
       <InkBackground />
       <Header />
-      <ScrollNav />
       <div className="mx-auto max-w-[1320px] px-5 lg:px-6">
         <HomeContent />
         <PrologueSection />

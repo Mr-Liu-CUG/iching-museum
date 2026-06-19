@@ -9,7 +9,7 @@ export default function HeroSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-      className="relative flex flex-col items-center justify-center min-h-[90vh] text-center px-4"
+      className="relative flex flex-col items-center justify-center min-h-[90vh] text-center px-4 scroll-mt-32"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.92 }}
