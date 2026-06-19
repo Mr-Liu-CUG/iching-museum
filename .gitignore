@@ -44,3 +44,30 @@ coverage/
 *.tsbuildinfo
 next-env.d.ts
 package.json.bak
+
+# Old vanilla HTML/JS version (now Next.js)
+index.html
+script.js
+style.css
+
+# Old data files (now using hexagrams-data.json)
+data/hexagrams-data.js
+data/content-*.js
+data/lang/
+
+# Claude Code transient files
+.agents/
+.claude/skills/
+skills-lock.json
+CLAUDE-CODE-GUIDE.md
+
+# Old reference repo
+zhouyi-main/
+
+# Old build scripts
+scripts/build-data.js
+scripts/merge-data.mjs
+scripts/parse-zhouyi.mjs
+
+# Misc
+README.pdf
