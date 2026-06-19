@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+nodejsnode_global/
+
+# Next.js
+.next/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/settings.json
+
+# Build output
+dist/
+build/
+
+# Large data exports (keep source CSVs)
+*.zip
+
+# Logs
+*.log
+npm-debug.log*
+
+# Claude Code session files (transient)
+.claude/plans/
+.claude/session-*
+.claude/worktrees/
+.claude/settings.local.json
+
+# Test coverage
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
