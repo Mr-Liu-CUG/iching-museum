@@ -1,6 +1,16 @@
 # Dependencies
 node_modules/
 nodejsnode_global/
+nodejsnode_global/**
+
+# Redundant root CSVs (use data/ versions instead)
+/*.csv
+!/data/*.csv
+
+# Screenshots (keep only in screenshots/)
+ghpages-*.png
+homepage-*.png
+.playwright-mcp/
 
 # Next.js
 .next/

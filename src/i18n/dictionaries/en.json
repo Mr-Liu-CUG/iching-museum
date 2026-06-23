@@ -1,0 +1,95 @@
+{
+  "locale": "en",
+  "site": {
+    "title": "I Ching Digital Museum",
+    "subtitle": "I Ching Digital Museum",
+    "tagline": "Wisdom from 3,000 Years Ago · Still Answering Life's Questions Today",
+    "footer": "Digital Museum · I Ching Aesthetic Visualization Research",
+    "copyright": "Song Dynasty Aesthetics · Eastern Philosophy"
+  },
+  "nav": {
+    "home": "Home",
+    "daily": "Daily Hexagram",
+    "whatIs": "What is I Ching",
+    "bagua": "Bagua",
+    "learning": "Learn",
+    "wisdom": "Wisdom",
+    "aiTutor": "AI Tutor",
+    "explore": "Explore 64 Hexagrams"
+  },
+  "hero": {
+    "cta": "Start Exploring ↓"
+  },
+  "daily": {
+    "title": "Daily Hexagram",
+    "wisdom": "Words of Wisdom",
+    "thinkDirection": "Direction for Reflection",
+    "actionAdvice": "Suggested Action",
+    "viewFull": "View Full Reading →"
+  },
+  "whatIs": {
+    "title": "What is I Ching",
+    "subtitle": "The Origins of 3,000 Years of Eastern Wisdom"
+  },
+  "bagua": {
+    "title": "Bagua Navigator",
+    "subtitle": "Heaven and Earth in Position · Mountain and Lake in Harmony · Thunder and Wind in Motion · Water and Fire in Balance"
+  },
+  "learning": {
+    "title": "Learning Path",
+    "subtitle": "A Journey from Beginner to Mastery",
+    "levels": {
+      "newbie": "I Ching Novice",
+      "yinyang": "Yin-Yang Apprentice",
+      "bagua": "Bagua Apprentice",
+      "scholar": "64 Hexagrams Scholar",
+      "researcher": "Xiang-Shu Researcher",
+      "master": "I Ching Master"
+    },
+    "current": "Current",
+    "explored": "Explored",
+    "totalHexagrams": "Hexagrams",
+    "startExploring": "Begin exploring the 64 hexagrams and embark on your learning journey"
+  },
+  "wisdom": {
+    "title": "Wisdom for Life",
+    "subtitle": "The I Ching is not a tool for prediction, but a mirror for knowing yourself"
+  },
+  "aiTutor": {
+    "title": "AI Classics Mentor",
+    "subtitle": "Illuminate your life's questions through the mirror of I Ching wisdom",
+    "placeholder": "Ask a question you care about...",
+    "startChat": "Start Chat",
+    "disclaimer": "The AI will not predict the future or make decisions for you. It offers a philosophical framework for reflection."
+  },
+  "prologue": {
+    "open": "Open I Ching Primer (Historical Origins · Divination Methods · Great Masters · Modern Insights)",
+    "close": "Close I Ching Primer"
+  },
+  "hexagram": {
+    "yaoHint": "Click any yao line · Experience the wonder of changing hexagrams",
+    "yaoFlipped": "Changed",
+    "yaoFlip": "Click to Flip",
+    "yaoNetwork": "Six Yao Transformation Network",
+    "relationGraph": "Hexagram Evolution Map",
+    "matrix": "Complete 64 Hexagrams Digital Matrix",
+    "matrixSub": "Qian-Kun Virtue · Xian-Heng Function · Complete Zhouyi Sequence",
+    "schools": {
+      "title": "Schools of Interpretation",
+      "shaoYong": "Shao Yong",
+      "fuPeirong": "Fu Peirong",
+      "traditional": "Traditional",
+      "zhangMingren": "Zhang Mingren"
+    },
+    "disclaimer": "The above interpretations reflect the cultural perspectives of different eras. For philosophical and cultural research reference only.",
+    "modern": {
+      "title": "Reflections for Modern Life",
+      "preamble": "The following interprets this hexagram's relevance to modern life from a philosophical perspective — for reflection, not prediction.",
+      "career": "/ Career Reflections /",
+      "wealth": "/ Wealth Reflections /",
+      "love": "/ Love Reflections /",
+      "health": "/ Health Reflections /",
+      "interpersonal": "/ Relationship Reflections /"
+    }
+  }
+}
